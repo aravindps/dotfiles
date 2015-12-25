@@ -1,0 +1,30 @@
+!
+! Swap Caps_Lock and Control_L
+!
+remove Lock = Caps_Lock
+remove Control = Control_L
+keysym Control_L = Caps_Lock
+keysym Caps_Lock = Control_L
+add Lock = Caps_Lock
+add Control = Control_L
+
+!
+! Swap Enter and Control_R
+!
+remove Control = Control_R
+keysym Control_R = Return
+keysym Return = Control_R
+add Control = Control_R
+
+!
+! Swap Super_L(win) and Alt_L
+!
+remove mod1 = Alt_R
+!remove mod4 = Super_L
+!add mod1 = Super_L
+add mod4 = Alt_R
+
+!
+! Natural scroll
+!
+pointer = 1 2 3 5 4 6 7 8 9 10 11 12

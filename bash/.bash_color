@@ -1,0 +1,8 @@
+## bash prompt
+
+function nonzero_return() {
+    RETVAL=$?
+    [ $RETVAL -ne 0 ] && echo "$RETVAL "
+}
+
+export PS1="\[$(tput bold)\]\[$(tput setaf 4)\]\w\[$(tput setaf 1)\] \`nonzero_return\`\n\[$(tput rmul)\]\[$(tput setaf 3)\]\\$\[$(tput sgr0)\]"
