@@ -255,6 +255,7 @@ bar {
 #..........
 
 #exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/the-dark-knight-trilogy-wallpaper-full-hd.jpg
+exec nitrogen --restore
 exec thunar --daemon
 exec --no-startup-id eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)
 exec --no-startup-id nm-applet
