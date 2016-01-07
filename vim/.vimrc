@@ -61,6 +61,16 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
 
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+map <Up>   <C-W>k
+map <Down> <C-W>j
+map <Left> <C-W>h
+map <Right> <C-W>l
+
 
 " remap leader key from \ to <space>
 let mapleader=" "
@@ -89,6 +99,11 @@ nnoremap <Leader>0 :10b<CR>
 " force write wth sudo permision
 noremap <Leader>W :w !sudo tee % > /dev/null
 noremap <Leader>w :w<CR>
+
+function! FormatCommitHeading()
+	normal 0Js | $F_s | 
+endfunction
+noremap <Leader>m :call FormatCommitHeading()<CR>
 
 " reload settings from $HOME/vimrc
 noremap <Leader><C-r> :so ~/.vimrc<CR>
