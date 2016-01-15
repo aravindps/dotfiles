@@ -20,6 +20,8 @@ alias rm='mv -it ~/trash/'
 alias emacs='emacs -nw'
 alias tmux='tmux -2 -u'
 alias xclip='xclip -selection clipboard'
+alias v='vim'
+alias gv='vim --servername GVIM --remote'
 
 ## eclipse vim
 alias veclipse='vim -c "PingEclim" -c "ProjectsTree"'
