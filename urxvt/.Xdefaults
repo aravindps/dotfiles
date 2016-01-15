@@ -1,0 +1,9 @@
+#include "/home/aravindps/.colors/gruvbox"
+
+URxvt*termName:               rxvt-unicode-256color
+URxvt.internalBorder:         10
+URxvt.cursorBlink:            true
+URxvt.scrollBar:              false
+
+URxvt.font:                   xft:M+ 2m:size=17
+Xcursor.size:                 32
