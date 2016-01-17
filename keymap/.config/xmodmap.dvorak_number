@@ -1,0 +1,23 @@
+!
+! Swap Super_L(win) and Alt_L
+!
+remove mod1 = Alt_R
+!remove mod4 = Super_L
+!add mod1 = Super_L
+!add mod4 = Alt_R
+keysym Alt_R = Mode_switch
+
+
+!
+! Make home row as numberic
+!
+keycode  24 = apostrophe quotedbl 1 exclam
+keycode  25 = comma less 2 at
+keycode  26 = period greater 3 numbersign
+keycode  27 = p P 4 dollar
+keycode  28 = y Y 5 percent
+keycode  29 = f F 6 asciicircum
+keycode  30 = g G 7 ampersand
+keycode  31 = c C 8 asterisk
+keycode  32 = r R 9 parenleft
+keycode  33 = l L 0 parenright
