@@ -105,11 +105,9 @@ function! FormatCommitHeading()
 endfunction
 noremap <Leader>m :call FormatCommitHeading()<CR>
 
-" reload settings from $HOME/vimrc
-noremap <Leader><C-r> :so ~/.vimrc<CR>
-
-" end of line
-noremap <Leader>e $
+noremap <Leader><C-r> :so ~/.vimrc<CR>             " reload settings from $HOME/vimrc
+noremap <Leader><C-e> :e ~/.vimrc<CR>              " edit settings from $HOME/vimrc
+noremap <Leader>e $                                " end of line
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " load plugins using Vundle
