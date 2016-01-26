@@ -22,6 +22,7 @@ alias emacs='emacs -nw'
 alias tmux='tmux -2 -u'
 alias xclip='xclip -selection clipboard'
 alias v='vim'
+alias :e='v'
 alias gv='vim --servername GVIM --remote'
 
 ## eclipse vim
