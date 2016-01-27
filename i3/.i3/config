@@ -31,6 +31,9 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+period workspace next
 bindsym $mod+comma workspace prev
 
+# jump to recent workspace
+bindsym $mod+Tab workspace back_and_forth
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
