@@ -39,11 +39,17 @@ alias gf='git fetch '
 alias gst='git status '
 alias gd='git diff '
 alias gb='git branch '
+alias gc='git commit -v '
 alias gco='git checkout '
 alias glol='git log --graph --oneline --decorate --date=relative --all'
 alias gpwd='git rev-parse --abbrev-ref HEAD'
 alias gp2o='git push --set-upstream origin `gpwd`'
 alias gDelMergedBranch='git branch --merged  | grep "*" -v | xargs git branch -d'
+
+gMsg(){
+	git show $* | sed -n '/^Date:/,/^diff --git/p' | sed -e '1d;$d' | xc
+}
+alias gMsg='gMsg'
 
 ## misc
 log_errors(){
