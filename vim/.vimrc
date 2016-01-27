@@ -101,7 +101,7 @@ noremap <Leader>W :w !sudo tee % > /dev/null
 noremap <Leader>w :w<CR>
 
 function! FormatCommitHeading()
-	normal 0Js | $F_s | 
+	normal k0Js | $F_s | 
 endfunction
 noremap <Leader>m :call FormatCommitHeading()<CR>
 
