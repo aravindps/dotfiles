@@ -7,9 +7,9 @@ if [ -e ~/.bash_aliases_work ]; then
 fi
 
 ## alternate keys are given for easy switch between keybroad layouts
-alias xcapemap='xcape -e "Control_R=Return;Control_L=Escape;Shift_R=BackSpace" && echo "dual mode Ctrl_R|Return, Ctrl_L|Esc and Shift_R|Backspace"'
+alias xcapemap='xcape -e "Control_R=Return;Control_L=Escape;Shift_L=Delete;Shift_R=BackSpace" && echo "dual mode Ctrl_R|Return, Ctrl_L|Esc, Shift_R|Backspace and Shift_L|Delete"'
 alias xcapekill='pkill xcape'
-alias aoeu='setxkbmap en_US && echo "set to qwerty layout" && xcapekill'
+alias aoeu='setxkbmap en_US && xcapekill && echo "set to qwerty layout"'
 alias swapkey='xmodmap ~/.config/xmodmap.swapkeys && xcapemap && echo "control, caps and enter are remapped"'
 alias numkey='xmodmap ~/.config/xmodmap.dvorak_number && echo "Made top alpha row as numeric"'
 alias asdf='setxkbmap dvorak && echo "set to dvorak layout" && numkey && swapkey'
@@ -21,6 +21,7 @@ alias rm='mv -it ~/trash/'
 alias emacs='emacs -nw'
 alias tx='tmux -2 -u'
 alias xc='xclip -selection clipboard'
+alias pwdc='pwd | tr -d "\n" | xc'
 alias v='vim'
 alias :e='v'
 alias gv='vim --servername GVIM --remote'
