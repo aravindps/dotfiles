@@ -21,7 +21,7 @@ alias rm='mv -it ~/trash/'
 alias emacs='emacs -nw'
 alias tx='tmux -2 -u'
 alias xc='xclip -selection clipboard'
-alias pwdc='pwd | tr -d "\n" | xc'
+alias pwdc='pwd | tr -d "\n\r" | xc'
 alias v='vim'
 alias :e='v'
 alias gv='vim --servername GVIM --remote'
@@ -37,15 +37,16 @@ alias ds_projector='~/.screenlayout/projector.sh'
 
 ## git alias
 alias gf='git fetch '
-alias gst='git status '
+alias gst='git status -sb '
 alias gd='git diff '
-alias gb='git branch '
+alias gb='git branch -v '
 alias gc='git commit -v '
 alias gco='git checkout '
 alias glol='git log --graph --oneline --decorate --date=relative --all'
 alias gpwd='git rev-parse --abbrev-ref HEAD'
-alias gp2o='git push --set-upstream origin `gpwd`'
+alias gpo='git push --set-upstream origin `gpwd`'
 alias gDelMergedBranch='git branch --merged  | grep "*" -v | xargs git branch -d'
+alias gsl='git stash list'
 
 gMsg(){
 	git show $* | sed -n '/^Date:/,/^diff --git/p' | sed -e '1d;$d' | xc
