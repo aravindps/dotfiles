@@ -11,10 +11,10 @@ add Control = Control_L
 !
 ! Swap Enter and Control_R
 !
-remove Control = Control_R
-keysym Control_R = Return
-keysym Return = Control_R
-add Control = Control_R
+!remove Control = Control_R
+!keysym Control_R = Return
+!keysym Return = Control_R
+!add Control = Control_R
 
 !
 ! Swap Super_L(win) and Alt_L

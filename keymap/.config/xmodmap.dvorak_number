@@ -39,3 +39,10 @@ keycode  19 = 0 parenright F10 F10
 keycode  20 = bracketleft braceleft F11 F11
 keycode  21 = bracketright braceright F12 F12
 
+!
+! Home row arrow keys
+!
+keycode  44 = h H Left Left
+keycode  45 = t T Down Down
+keycode  46 = n N Up Up
+keycode  47 = s S Right Right
