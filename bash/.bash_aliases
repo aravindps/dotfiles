@@ -7,7 +7,7 @@ if [ -e ~/.bash_aliases_work ]; then
 fi
 
 ## alternate keys are given for easy switch between keybroad layouts
-alias xcapemap='xcape -e "Control_R=Return;Control_L=Escape;Shift_L=Delete;Shift_R=BackSpace" && echo "dual mode Ctrl_R|Return, Ctrl_L|Esc, Shift_R|Backspace and Shift_L|Delete"'
+alias xcapemap='xcape -e "Control_L=Escape" && echo "dual mode Ctrl_L|Esc"'
 alias xcapekill='pkill xcape'
 alias aoeu='setxkbmap en_US && xcapekill && echo "set to qwerty layout"'
 alias swapkey='xmodmap ~/.config/xmodmap.swapkeys && xcapemap && echo "control, caps and enter are remapped"'
@@ -38,6 +38,7 @@ alias ds_projector='~/.screenlayout/projector.sh'
 ## git alias
 alias gf='git fetch '
 alias gst='git status -sb '
+alias gsta='git status '
 alias gd='git diff '
 alias gb='git branch -v '
 alias gc='git commit -v '
