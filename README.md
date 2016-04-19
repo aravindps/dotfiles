@@ -2,6 +2,8 @@
 
 This set up uses `stow` directory structure to update dotfiles. For more info http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
 
+
+
 ## Installation
 
 * `git clone https://github.com/aravindps/dotfiles.git ~/dotfiles`
