@@ -35,8 +35,8 @@ TEXT
   ## RAM Info
   { "full_text" : "≣ MEM: ${mem} - [$membar]" , "color" : "\#C8C039" },
   ## CPU Info
-  # [{ "full_text" : "▣ CPU: ${cpu}% - [$cpubar] " , "color" : "\#ffffff" },
-  { "full_text" : "▣ CPU: ${cpu}%" , "color" : "\#ffffff" },
+  { "full_text" : "▣ CPU: ${cpu}% - [$cpubar] " , "color" : "\#ffffff" },
+  # { "full_text" : "▣ CPU: ${cpu}%" , "color" : "\#ffffff" },
   # BROWN B58900
   # { "full_text" : "≣ MEM: ${mem} " , "color" : "\#C8C039" },
   ## Disk Space

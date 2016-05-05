@@ -154,11 +154,12 @@ workspace $ws0 output LVDS1
 # Assign window to a workspace
 assign [class="(?i)term"] → $ws1
 assign [class="(?i)eclipse"] → $ws2
+assign [title="(?i)eclipse\s*"] → $ws2
 assign [class="(?i)thunar"] → $ws3
 assign [class="(?i)emacs"] → $ws4
 assign [class="(?i)firefox"] → $ws8
 assign [class="(?i)hipchat"] → $ws9
-assign [class="(?i)chrome"] → $ws0
+assign [class="(?i)chrom"] → $ws0
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -220,6 +221,9 @@ new_float pixel 4
 # toggle border
 bindsym $mod+b border toggle
 
+# toggle bar
+bindsym $mod+Shift+b bar mode toggle
+
 # Hybrid colors
 set $status_grey_bg     #101010
 set $black              #282A2E
@@ -230,10 +234,11 @@ set $yellow             #F0C674
 set $red                #CC6666
 set $darkred            #A54242
 set $green              #B5BD56
+set $blue               #00B8E6
 set $purple             #cc6699
 
 #class                  border      backgr.     text        split
-client.focused          $purple     $purple     $black      $red
+client.focused          $blue       $blue       $black      $red
 client.focused_inactive $grey       $grey       $lightgrey  $grey
 client.unfocused        $grey       $grey       $lightgrey  $grey
 client.urgent           $red        $red        $black      $red
@@ -245,7 +250,7 @@ bar {
         #status_command i3status
 		status_command ~/.i3/conky.sh
         position top
-		mode dock
+		mode invisible
 		workspace_buttons yes
 		#tray_output none
 		colors {
