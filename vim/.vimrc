@@ -38,6 +38,7 @@ set ignorecase          " regex pattern case
 set smartcase
 set incsearch           " incremental search
 
+set autoread            " reload file from disk
 set noswapfile          " disables swp file
 set undofile            " Maintain undo history between sessions
 set undodir=~/.vim/undodir
@@ -51,6 +52,10 @@ nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
+
+
+" J inverse K
+nnoremap K f<space>r<CR>
 
 " re-map Ctrl-c to <Esc>
 inoremap <C-c> <Esc>
@@ -105,9 +110,10 @@ function! FormatCommitHeading()
 endfunction
 noremap <Leader>m :call FormatCommitHeading()<CR>
 
+noremap <Leader>r     :e!<CR>                      " reload current file from disk
 noremap <Leader><C-r> :so ~/.vimrc<CR>             " reload settings from $HOME/vimrc
 noremap <Leader><C-e> :e ~/.vimrc<CR>              " edit settings from $HOME/vimrc
-noremap <Leader>e $                                " end of line
+noremap <Leader>e     $                            " end of line
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " load plugins using Vundle
