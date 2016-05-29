@@ -11,8 +11,8 @@ alias xcapemap='xcape -e "Control_L=Escape" && echo "dual mode Ctrl_L|Esc"'
 alias xcapekill='pkill xcape'
 alias aoeu='setxkbmap en_US && xcapekill && echo "set to qwerty layout"'
 alias swapkey='xmodmap ~/.config/xmodmap.swapkeys && xcapemap && echo "control, caps and enter are remapped"'
-alias numkey='xmodmap ~/.config/xmodmap.dvorak_number && echo "Made top alpha row as numeric"'
-alias asdf='setxkbmap dvorak && echo "set to dvorak layout" && numkey && swapkey'
+alias numkey='xmodmap ~/.config/xmodmap.dvorak && echo "Made top alpha row as numeric, numberic as function and few other tweaks"'
+alias asdf='setxkbmap dvorak && echo "set to dvorak layout" && swapkey && numkey'
 
 ## General utilitly
 alias mv='mv -i'

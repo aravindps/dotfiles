@@ -21,6 +21,9 @@ keycode  30 = g G 7 ampersand
 keycode  31 = c C 8 asterisk
 keycode  32 = r R 9 parenleft
 keycode  33 = l L 0 parenright
+keycode  34 = slash question bracketleft braceleft
+keycode  35 = equal plus bracketright braceright
+
 
 !05wDX"fp2geb"fv$yj
 !
@@ -46,3 +49,8 @@ keycode  44 = h H Left Left
 keycode  45 = t T Down Down
 keycode  46 = n N Up Up
 keycode  47 = s S Right Right
+
+!
+! More from space
+!
+keycode  65 = space NoSymbol BackSpace
