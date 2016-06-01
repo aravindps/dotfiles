@@ -38,6 +38,8 @@ set ignorecase          " regex pattern case
 set smartcase
 set incsearch           " incremental search
 
+set nostartofline       " Prevent the cursor from changing the current column
+                        " when jumping different buffer
 set autoread            " reload file from disk
 set noswapfile          " disables swp file
 set undofile            " Maintain undo history between sessions
@@ -56,6 +58,9 @@ vnoremap : ;
 
 " J inverse K
 nnoremap K f<space>r<CR>
+
+" Y yank till the EOL
+nnoremap Y y$
 
 " re-map Ctrl-c to <Esc>
 inoremap <C-c> <Esc>
