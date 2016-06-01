@@ -31,6 +31,9 @@ Plugin 'easymotion/vim-easymotion'
 " plugin on surrounding a selection with symbols
 Plugin 'tpope/vim-surround'
 
+" plugin on distraction free writing
+Plugin 'junegunn/goyo.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
