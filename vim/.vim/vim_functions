@@ -1,0 +1,11 @@
+" format git commit message heading from jira subject
+function! FormatCommitHeading()
+	normal k0Js | $F_s | 
+endfunction
+noremap <Leader>m :call FormatCommitHeading()<CR>
+
+
+" create data table from model fields
+function! DataTableJson()
+	normal 03dwi{ title: 'lyt;f;i', data: 'gpi' }
+endfunction

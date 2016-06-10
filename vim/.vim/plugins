@@ -34,6 +34,12 @@ Plugin 'tpope/vim-surround'
 " plugin on distraction free writing
 Plugin 'junegunn/goyo.vim'
 
+" plugin on commenting based on the language
+Plugin 'scrooloose/nerdcommenter'
+
+" colorscheme
+Plugin 'KabbAmine/yowish.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

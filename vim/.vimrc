@@ -105,11 +105,6 @@ nnoremap <Leader>0 :10b<CR>
 noremap <Leader>W :w !sudo tee % > /dev/null
 noremap <Leader>w :w<CR>
 
-function! FormatCommitHeading()
-	normal k0Js | $F_s | 
-endfunction
-noremap <Leader>m :call FormatCommitHeading()<CR>
-
 noremap <Leader>r     :e!<CR>                      " reload current file from disk
 noremap <Leader><C-r> :so ~/.vimrc<CR>             " reload settings from $HOME/vimrc
 noremap <Leader><C-e> :e ~/.vimrc<CR>              " edit settings from $HOME/vimrc
@@ -126,5 +121,16 @@ if filereadable(expand(pluginpath))
 		echo "Vundle is not available. Install 'VundleVim/Vundle.vim'"
 	endif
 else
-	echo "Plugging setting missing in" pluginpath
+	echo "Plugging setting missing in " pluginpath
 endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" load custom vim function
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let vimfunctionpath="~/.vim/vim_functions"
+if filereadable(expand(vimfunctionpath))
+	source ~/.vim/vim_functions
+else
+	echo "Vim custom functions missing in " vimfunctionpath
+endif
+colorscheme yowish

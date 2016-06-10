@@ -40,6 +40,7 @@ alias gf='git fetch '
 alias gst='git status -sb '
 alias gsta='git status '
 alias gd='git diff '
+alias gdc='git diff --cached'
 alias gb='git branch -v '
 alias gc='git commit -v '
 alias gco='git checkout '
@@ -52,7 +53,7 @@ alias gsl='git stash list'
 gMsg(){
 	git show $* | sed -n '/^Date:/,/^diff --git/p' | sed -e '1d;$d' | xc
 }
-alias gMsg='gMsg'
+alias gMsg='gMsg '
 
 ## misc
 log_errors(){
