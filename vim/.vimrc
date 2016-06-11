@@ -85,6 +85,7 @@ nnoremap <Leader>l :ls<CR>
 nnoremap <Leader>p :bp<CR>
 nnoremap <Leader>n :bn<CR>
 nnoremap <Leader>g :e#<CR>
+nnoremap <Leader>d :bd<CR>
 
 " Ngb to jump to buffer number  N = 0 to 10
 let c = 1

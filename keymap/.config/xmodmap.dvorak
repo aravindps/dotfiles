@@ -23,6 +23,7 @@ keycode  32 = r R 9 parenleft
 keycode  33 = l L 0 parenright
 keycode  34 = slash question bracketleft braceleft
 keycode  35 = equal plus bracketright braceright
+keycode  51 = backslash bar BackSpace BackSpace
 
 
 !05wDX"fp2geb"fv$yj
