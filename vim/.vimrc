@@ -3,8 +3,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set background=dark
 set t_Co=256
-"colorscheme gruvbox
-colorscheme Tomorrow-Night
 if has("gui_running")
   if has("gui_gtk2")
 	set guifont=termsyn\ 18
@@ -139,4 +137,4 @@ if filereadable(expand(vimfunctionpath))
 else
 	echo "Vim custom functions missing in " vimfunctionpath
 endif
-colorscheme yowish
+colorscheme dracula
