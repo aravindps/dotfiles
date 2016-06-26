@@ -63,20 +63,25 @@ nnoremap Y y$
 " re-map Ctrl-c to <Esc>
 inoremap <C-c> <Esc>
 
-" window navigation
+" window navigation - disabled as it conflicts with some vim features
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
+"command              " overritten       | actual vim function
+"----------------------------------------|--------------------
+"noremap gh   <C-w>h  " left window      | selection
+"noremap gj   <C-w>j  " down window      | move down in line wraps
+"noremap gk   <C-w>k  " up window        | move up in line wraps
+"noremap gl   <C-w>l  " right window     |
+"noremap gs   <C-w>s  " horizontal split | sleep
+"noremap g\|  <C-w>v  " vertical split   |
+"noremap gr   <c-w>r  " swap window      |
 
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
-
-map <Up>   <C-W>k
-map <Down> <C-W>j
-map <Left> <C-W>h
+" alternative window navigation with arrow keys
+map <Up>    <C-W>k
+map <Down>  <C-W>j
+map <Left>  <C-W>h
 map <Right> <C-W>l
 
 
@@ -84,7 +89,7 @@ map <Right> <C-W>l
 let mapleader=" "
 
 " buffer navigation
-nnoremap <Leader>l :ls<CR>
+nnoremap <Leader>l :ls<CR>:
 nnoremap <Leader>p :bp<CR>
 nnoremap <Leader>n :bn<CR>
 nnoremap <Leader>g :e#<CR>
