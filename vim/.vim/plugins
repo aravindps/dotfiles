@@ -37,9 +37,16 @@ Plugin 'junegunn/goyo.vim'
 " plugin on commenting based on the language
 Plugin 'scrooloose/nerdcommenter'
 
+" plugin on aligning the code based on a delim
+Plugin 'junegunn/vim-easy-align'
+
+" undo tree
+Plugin 'mbbill/undotree'
+
 " colorscheme
 Plugin 'dracula/vim'
 Plugin 'morhetz/gruvbox'
+Plugin 'jnurmine/Zenburn'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

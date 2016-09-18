@@ -19,9 +19,14 @@ alias mv='mv -i'
 alias rm_force='rm'
 alias rm='mv -it ~/trash/'
 alias emacs='emacs -nw'
-alias tx='tmux -2 -u'
+alias tmux='tmux -2 -u'
+alias tx='tmux'
 alias xc='xclip -selection clipboard'
 alias pwdc='pwd | tr -d "\n\r" | xc'
+realpath2clipboard() {
+    realpath $1 | tr -d "\n\r" | xc
+}
+alias realpathc='realpath2clipboard'
 alias v='vim'
 alias :e='v'
 alias gv='vim --servername GVIM --remote'

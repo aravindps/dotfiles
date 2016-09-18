@@ -97,7 +97,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 set $ws1 "1: cli"
-set $ws2 "2: eclipse"
+set $ws2 "2: ide"
 set $ws3 "3: file"
 set $ws4 "4: emacs"
 set $ws5 5
@@ -154,6 +154,7 @@ workspace $ws0 output LVDS1
 # Assign window to a workspace
 assign [class="(?i)term"] → $ws1
 assign [class="(?i)eclipse"] → $ws2
+assign [class="(?i)idea\s*"] → $ws2
 assign [title="(?i)eclipse\s*"] → $ws2
 assign [class="(?i)thunar"] → $ws3
 assign [class="(?i)emacs"] → $ws4
@@ -215,8 +216,8 @@ bindsym $mod+r mode "resize"
 #..........
 
 # window borded
-new_window pixel 4
-new_float pixel 4
+new_window pixel 3
+new_float pixel  5
 
 # toggle border
 bindsym $mod+b border toggle
