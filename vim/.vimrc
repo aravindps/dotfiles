@@ -24,6 +24,7 @@ set cursorline          " highlight current line
 set tabstop=4           " number of visual spaces per TAB
 set softtabstop=4       " number of spaces in tab when editing
 set shiftwidth=4        " number of space characters inserted for indentation
+set list                " marks tabs and spaces at EOL
 
 syntax enable           " syntax highlighting
 set mouse=""            " mouse is off
@@ -142,4 +143,4 @@ if filereadable(expand(vimfunctionpath))
 else
 	echo "Vim custom functions missing in " vimfunctionpath
 endif
-colorscheme dracula
+colorscheme onedark

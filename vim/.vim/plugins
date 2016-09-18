@@ -47,6 +47,8 @@ Plugin 'mbbill/undotree'
 Plugin 'dracula/vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'jnurmine/Zenburn'
+Plugin 'jacoborus/tender.vim'
+Plugin 'joshdick/onedark.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
