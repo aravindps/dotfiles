@@ -1,0 +1,65 @@
+! Numberic row
+keycode  9 = 1 exclam 1 exclam
+keycode  10 = 2 at 2 at
+keycode  11 = 3 numbersign 3 numbersign
+keycode  12 = 4 dollar 4 dollar
+keycode  13 = 5 percent 5 percent
+keycode  14 = Escape NoSymbol Escape 
+
+keycode  15 = BackSpace BackSpace BackSpace BackSpace
+keycode  16 = 6 asciicircum 6 asciicircum dead_circumflex dead_circumflex dead_circumflex
+keycode  17 = 7 ampersand 7 ampersand
+keycode  18 = 8 asterisk 8 asterisk
+keycode  19 = 9 parenleft 9 parenleft dead_grave NoSymbol dead_grave
+keycode  20 = 0 parenright 0 parenright
+keycode  21 = bracketleft braceleft bracketleft braceleft
+keycode  22 = bracketright braceright bracketright braceright dead_tilde NoSymbol dead_tilde
+
+! Alpha 1st row
+keycode  23 = apostrophe quotedbl apostrophe quotedbl dead_acute dead_diaeresis dead_acute
+keycode  24 = comma less comma less dead_cedilla dead_caron dead_cedilla
+keycode  25 = period greater period greater dead_abovedot periodcentered dead_abovedot
+keycode  26 = p P p P
+keycode  27 = y Y y Y
+keycode  28 = Tab ISO_Left_Tab Tab ISO_Left_Tab
+
+keycode  29 = backslash bar backslash bar
+keycode  30 = f F f F
+keycode  31 = g G g G
+keycode  32 = c C c C
+keycode  33 = r R r R
+keycode  34 = l L l L
+keycode  35 = slash question slash question
+keycode  51 = equal plus equal plus
+
+! Alpha 2nd row
+keycode  66 = a A a A
+keycode  38 = o O o O
+keycode  39 = e E e E
+keycode  40 = u U u U
+keycode  41 = i I i I
+keycode  42 = Caps_Lock NoSymbol Caps_Lock
+
+keycode  43 = Return NoSymbol Return
+keycode  44 = d D d D
+keycode  45 = h H h H
+keycode  46 = t T t T
+keycode  47 = n N n N
+keycode  48 = s S s S
+keycode  36 = minus underscore minus underscore
+
+! Alpha 3rd row
+!! don't know what itt is keycode  49 = grave asciitilde grave asciitilde dead_grave dead_tilde dead_grave
+keycode  50 = semicolon colon semicolon colon dead_ogonek dead_doubleacute dead_ogonek
+keycode  52 = q Q q Q
+keycode  53 = j J j J
+keycode  54 = k K k K
+keycode  55 = x X x X
+keycode  56 = Shift_L NoSymbol Shift_L
+
+keycode  57 = Shift_R NoSymbol Shift_R
+keycode  58 = b B b B
+keycode  59 = m M m M
+keycode  60 = w W w W
+keycode  61 = v V v V
+keycode  62 = z Z z Z

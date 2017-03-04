@@ -68,6 +68,8 @@ filetype plugin indent on    " required
 " air-line settings
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
+" set airline theme
+let g:airline_theme = 'tender'
 
 " NERDTree settings
 noremap <C-n> :NERDTreeToggle<CR>

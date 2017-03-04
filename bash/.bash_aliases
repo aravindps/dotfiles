@@ -7,6 +7,7 @@ if [ -e ~/.bash_aliases_work ]; then
 fi
 
 ## alternate keys are given for easy switch between keybroad layouts
+#alias xcapemap='xcape -e "Control_L=Escape;Control_R=Escape" && echo "dual mode Ctrl_L|Esc and Ctrl_R|Esc"'
 alias xcapemap='xcape -e "Control_L=Escape" && echo "dual mode Ctrl_L|Esc"'
 alias xcapekill='pkill xcape'
 alias aoeu='setxkbmap en_US && xcapekill && echo "set to qwerty layout"'

@@ -9,3 +9,9 @@ noremap <Leader>m :call FormatCommitHeading()<CR>
 function! DataTableJson()
 	normal 03dwi{ title: 'lyt;f;i', data: 'gpi' }
 endfunction
+
+" create data table from model fields
+function! CleanTetObject()
+	normal :s/\w*=//g 
+	normal :s/ /, /g 
+endfunction

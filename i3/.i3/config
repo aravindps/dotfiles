@@ -239,14 +239,24 @@ set $red                #CC6666
 set $darkred            #A54242
 set $green              #B5BD56
 set $blue               #00B8E6
+set $light_blue         #B3B3FF
 set $purple             #cc6699
+set $orange             #FF8000
+set $dark_orange        #662200
 
 #class                  border      backgr.     text        split
-client.focused          $blue       $blue       $black      $red
-client.focused_inactive $grey       $grey       $lightgrey  $grey
+client.focused          $blue		$blue       $black      $red
+client.focused_inactive $white      $white      $black      $white
 client.unfocused        $grey       $grey       $lightgrey  $grey
 client.urgent           $red        $red        $black      $red
 client.background       $black
+
+
+#WINDOW DECORATION COLORS     Border    Background   Text      Indicator
+#client.focused                #FF8936   #FF8936      #ffffff   #FF8936
+#client.focused_inactive       #D45800   #D45800      #333333   #D45800
+#client.unfocused              #D45800   #D45800      #888888   #D45800
+#client.urgent                 #F80018   #F80018      #ffffff   #F800
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -261,8 +271,8 @@ bar {
 			background              $status_grey_bg
 			statusline              $white
 			#class                  border              backgr.           text
-			focused_workspace       $purple             $green            $status_grey_bg
-			active_workspace        $purple             $status_grey_bg   $purple
+			focused_workspace       $blue               $yellow           $status_grey_bg
+			active_workspace        $blue               $status_grey_bg   $blue
 			inactive_workspace      $status_grey_bg     $status_grey_bg   $lightgrey
 			urgent_workspace        $black              $red              $status_grey_bg
 		}

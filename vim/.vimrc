@@ -5,7 +5,7 @@ set background=dark
 set t_Co=256
 if has("gui_running")
   if has("gui_gtk2")
-	set guifont=termsyn\ 18
+	set guifont=M+\ 2m\ 16
   elseif has("gui_macvim")
     set guifont=Inconsolata\ 12     " Not yet tested
   elseif has("gui_win32")
@@ -119,6 +119,10 @@ noremap <Leader>r     :e!<CR>                      " reload current file from di
 noremap <Leader><C-r> :so ~/.vimrc<CR>             " reload settings from $HOME/vimrc
 noremap <Leader><C-e> :e ~/.vimrc<CR>              " edit settings from $HOME/vimrc
 noremap <Leader>e     $                            " end of line
+" Include all the files
+set path+=**
+" find files
+noremap <Leader>f     :find 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " load plugins using Vundle
@@ -143,4 +147,7 @@ if filereadable(expand(vimfunctionpath))
 else
 	echo "Vim custom functions missing in " vimfunctionpath
 endif
+"colorscheme dracula
+"colorscheme tender
 colorscheme onedark
+set termguicolors
