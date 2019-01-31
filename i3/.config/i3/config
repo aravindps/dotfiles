@@ -219,8 +219,10 @@ bindsym $mod+r mode "resize"
 #..........
 
 # window borded
-new_window pixel 3
-new_float pixel  5
+new_window pixel 5
+new_float pixel  10
+smart_gaps on
+for_window [class="^.*"] border pixel 5
 
 # toggle border
 bindsym $mod+b border toggle
@@ -237,7 +239,7 @@ set $white              #C5C8C6
 set $yellow             #F0C674
 set $red                #CC6666
 set $darkred            #A54242
-set $green              #B5BD56
+set $light_green        #B5BD56
 set $blue               #00B8E6
 set $light_blue         #B3B3FF
 set $purple             #cc6699
@@ -245,7 +247,7 @@ set $orange             #FF8000
 set $dark_orange        #662200
 
 #class                  border      backgr.     text        split
-client.focused          $blue		$blue       $black      $red
+client.focused          $light_green		$light_green       $black      $red
 client.focused_inactive $white      $white      $black      $white
 client.unfocused        $grey       $grey       $lightgrey  $grey
 client.urgent           $red        $red        $black      $red
@@ -278,16 +280,31 @@ bar {
 		}
 }
 
+# gaps
+
+gaps inner 15
+gaps outer 15
+gaps horizontal 5
+gaps vertical 5
+gaps top 5
+gaps right 5
+gaps bottom 5
+gaps left 5
+
 #..........
 # autostart apps
 #..........
 
 #exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/the-dark-knight-trilogy-wallpaper-full-hd.jpg
-exec nitrogen --restore
-exec thunar --daemon
-exec --no-startup-id eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)
+# exec nitrogen --restore
+ exec thunar --daemon
+# exec --no-startup-id eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-volumed
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id clipit
+# exec --no-startup-id hsetroot -add "#ff0000" -add "#2fa523" -gradient 100
+exec --no-startup-id hsetroot -extend ~/Downloads/night-sky.jpg
+#exec --no-startup-id compton -cCGfF -b -i 0.5 --vsync opengl
+# exec --no-startup-id hsetroot -add "#c79081" -add "#dfa579" -gradient 100
 exec --no-startup-id xautolock -time 10 -locker blurlock
