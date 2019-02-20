@@ -221,7 +221,7 @@ bindsym $mod+r mode "resize"
 # window borded
 new_window pixel 5
 new_float pixel  10
-smart_gaps on
+
 for_window [class="^.*"] border pixel 5
 
 # toggle border
@@ -240,15 +240,17 @@ set $yellow             #F0C674
 set $red                #CC6666
 set $darkred            #A54242
 set $light_green        #B5BD56
-set $blue               #00B8E6
+set $aqua               #00B8E6
 set $light_blue         #B3B3FF
 set $purple             #cc6699
 set $orange             #FF8000
 set $dark_orange        #662200
 
 #class                  border      backgr.     text        split
-client.focused          $light_green		$light_green       $black      $red
+
+client.focused          $aqua		$aqua       $black      $red
 client.focused_inactive $white      $white      $black      $white
+
 client.unfocused        $grey       $grey       $lightgrey  $grey
 client.urgent           $red        $red        $black      $red
 client.background       $black
@@ -273,8 +275,8 @@ bar {
 			background              $status_grey_bg
 			statusline              $white
 			#class                  border              backgr.           text
-			focused_workspace       $blue               $yellow           $status_grey_bg
-			active_workspace        $blue               $status_grey_bg   $blue
+			focused_workspace       $aqua               $yellow           $status_grey_bg
+			active_workspace        $aqua               $status_grey_bg   $aqua
 			inactive_workspace      $status_grey_bg     $status_grey_bg   $lightgrey
 			urgent_workspace        $black              $red              $status_grey_bg
 		}
@@ -290,6 +292,8 @@ gaps top 5
 gaps right 5
 gaps bottom 5
 gaps left 5
+# smart_gaps on
+# smart_gaps inverse_outer
 
 #..........
 # autostart apps
