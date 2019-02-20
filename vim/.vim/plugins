@@ -11,16 +11,17 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+" Plugin 'tpope/vim-fugitive'
 
 " plugin on file browser
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 
 " plugin on fuzzy search
-Plugin 'kien/ctrlp.vim'
+" Plugin 'kien/ctrlp.vim'
 
 " plugin on status bar
-Plugin 'bling/vim-airline'
+" Plugin 'bling/vim-airline'
+" Plugin 'itchyny/lightline.vim'
 
 " plugin on syntax check
 Plugin 'scrooloose/syntastic'
@@ -35,7 +36,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'junegunn/goyo.vim'
 
 " plugin on commenting based on the language
-Plugin 'scrooloose/nerdcommenter'
+" Plugin 'scrooloose/nerdcommenter'
 
 " plugin on aligning the code based on a delim
 Plugin 'junegunn/vim-easy-align'
@@ -49,6 +50,12 @@ Plugin 'morhetz/gruvbox'
 Plugin 'jnurmine/Zenburn'
 Plugin 'jacoborus/tender.vim'
 Plugin 'joshdick/onedark.vim'
+Plugin 'yuttie/inkstained-vim'
+Plugin 'wolverian/minimal'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'noahfrederick/vim-hemisu'
+Plugin 'NLKNguyen/papercolor-theme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -66,13 +73,8 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " air-line settings
-set laststatus=2
-let g:airline#extensions#tabline#enabled = 1
-" set airline theme
-let g:airline_theme = 'tender'
 
 " NERDTree settings
-noremap <C-n> :NERDTreeToggle<CR>
 
 " Inbuilt dir view
 " noremap <C-n> :Explore <CR>

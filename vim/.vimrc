@@ -21,6 +21,7 @@ set number              " show current line number
 set wildmenu            " visual autocomplete for command menu
 
 set cursorline          " highlight current line
+set colorcolumn=80      " column length/width in a line
 set tabstop=4           " number of visual spaces per TAB
 set softtabstop=4       " number of spaces in tab when editing
 set shiftwidth=4        " number of space characters inserted for indentation
@@ -54,6 +55,12 @@ nnoremap : ;
 vnoremap ; :
 vnoremap : ;
 
+" File explorer
+let g:netrw_preview   = 1
+let g:netrw_liststyle = 3
+let g:netrw_winsize   = 30
+let g:netrw_browse_split=4
+noremap <C-n> :Vexplore<CR>
 
 " J inverse K
 nnoremap K f<space>r<CR>
@@ -95,6 +102,9 @@ nnoremap <Leader>p :bp<CR>
 nnoremap <Leader>n :bn<CR>
 nnoremap <Leader>g :e#<CR>
 nnoremap <Leader>d :bd<CR>
+
+" window navigation
+nnoremap <Leader>c :close<CR>
 
 " Ngb to jump to buffer number  N = 0 to 10
 let c = 1
