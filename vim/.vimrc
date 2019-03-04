@@ -151,13 +151,16 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " load custom vim function
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let vimfunctionpath="~/.vim/vim_functions"
+let vimfunctionpath="~/.config/nvim/vim_functions"
 if filereadable(expand(vimfunctionpath))
-	source ~/.vim/vim_functions
+	source ~/.config/nvim/vim_functions
 else
 	echo "Vim custom functions missing in " vimfunctionpath
 endif
+set termguicolors
 "colorscheme dracula
 "colorscheme tender
-colorscheme onedark
-set termguicolors
+"colorscheme onedark
+"colorscheme gruvbox
+colorscheme minimal
+colorscheme PaperColor
