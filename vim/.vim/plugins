@@ -52,6 +52,7 @@ Plugin 'jacoborus/tender.vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'yuttie/inkstained-vim'
 Plugin 'wolverian/minimal'
+Plugin 'nightsense/office'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'noahfrederick/vim-hemisu'
@@ -73,6 +74,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " air-line settings
+set laststatus=0
 
 " NERDTree settings
 
