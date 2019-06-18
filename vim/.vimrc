@@ -126,8 +126,8 @@ noremap <Leader>W :w !sudo tee % > /dev/null
 noremap <Leader>w :w<CR>
 
 noremap <Leader>r     :e!<CR>                      " reload current file from disk
-noremap <Leader><C-r> :so ~/.vimrc<CR>             " reload settings from $HOME/vimrc
-noremap <Leader><C-e> :e ~/.vimrc<CR>              " edit settings from $HOME/vimrc
+noremap <Leader><C-r> :so ~/.config/nvim/init.vim<CR>             " reload settings from $HOME/vimrc
+noremap <Leader><C-e> :e ~/.config/nvim/init.vim<CR>              " edit settings from $HOME/vimrc
 noremap <Leader>e     $                            " end of line
 " Include all the files
 set path+=**
@@ -137,10 +137,10 @@ noremap <Leader>f     :find
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " load plugins using Vundle
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let pluginpath="~/.vim/plugins"
+let pluginpath="~/.config/nvim/plugins"
 if filereadable(expand(pluginpath))
-	if filewritable(expand("~/.vim/bundle/Vundle.vim"))
-		source ~/.vim/plugins
+	if filewritable(expand("~/.config/nvim/bundle/Vundle.vim"))
+		source ~/.config/nvim/plugins
 	else
 		echo "Vundle is not available. Install 'VundleVim/Vundle.vim'"
 	endif

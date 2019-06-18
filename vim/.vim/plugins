@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -50,6 +50,8 @@ Plugin 'morhetz/gruvbox'
 Plugin 'jnurmine/Zenburn'
 Plugin 'jacoborus/tender.vim'
 Plugin 'joshdick/onedark.vim'
+Plugin 'whzup/greent.vim'
+Plugin 'tjammer/blayu.vim'
 Plugin 'yuttie/inkstained-vim'
 Plugin 'wolverian/minimal'
 Plugin 'nightsense/office'
@@ -57,6 +59,7 @@ Plugin 'arcticicestudio/nord-vim'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'noahfrederick/vim-hemisu'
 Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'sonph/onehalf'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
