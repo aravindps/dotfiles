@@ -312,3 +312,4 @@ exec --no-startup-id hsetroot -extend ~/Downloads/night-sky.jpg
 #exec --no-startup-id compton -cCGfF -b -i 0.5 --vsync opengl
 # exec --no-startup-id hsetroot -add "#c79081" -add "#dfa579" -gradient 100
 exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id hsetroot -solid "#0e2133"
