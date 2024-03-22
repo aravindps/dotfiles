@@ -44,6 +44,12 @@ Plugin 'junegunn/vim-easy-align'
 " undo tree
 Plugin 'mbbill/undotree'
 
+" plugin for drawing blocks good for presentations
+Plug 'jbyuki/venn.nvim'
+
+" mini excel level functions and live edit markdown tables 
+Plug 'dhruvasagar/vim-table-mode'
+
 " colorscheme
 Plugin 'dracula/vim'
 Plugin 'morhetz/gruvbox'
