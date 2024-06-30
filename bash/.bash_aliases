@@ -29,6 +29,7 @@ realpath2clipboard() {
 }
 alias realpathc='realpath2clipboard'
 alias v='vim'
+alias n='nvim'
 alias :e='v'
 alias gv='vim --servername GVIM --remote'
 
